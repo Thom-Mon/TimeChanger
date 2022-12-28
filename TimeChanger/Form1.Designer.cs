@@ -52,7 +52,7 @@
             // dateTimePicker_manual
             // 
             this.dateTimePicker_manual.Location = new System.Drawing.Point(39, 78);
-            this.dateTimePicker_manual.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker_manual.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker_manual.Name = "dateTimePicker_manual";
             this.dateTimePicker_manual.Size = new System.Drawing.Size(481, 39);
             this.dateTimePicker_manual.TabIndex = 0;
@@ -60,7 +60,7 @@
             // textBox_hour
             // 
             this.textBox_hour.Location = new System.Drawing.Point(568, 78);
-            this.textBox_hour.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_hour.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_hour.MaxLength = 2;
             this.textBox_hour.Name = "textBox_hour";
             this.textBox_hour.Size = new System.Drawing.Size(55, 39);
@@ -70,7 +70,7 @@
             // textBox_minute
             // 
             this.textBox_minute.Location = new System.Drawing.Point(688, 78);
-            this.textBox_minute.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_minute.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_minute.MaxLength = 2;
             this.textBox_minute.Name = "textBox_minute";
             this.textBox_minute.Size = new System.Drawing.Size(55, 39);
@@ -90,7 +90,7 @@
             // label_minute
             // 
             this.label_minute.AutoSize = true;
-            this.label_minute.Location = new System.Drawing.Point(695, 39);
+            this.label_minute.Location = new System.Drawing.Point(700, 42);
             this.label_minute.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_minute.Name = "label_minute";
             this.label_minute.Size = new System.Drawing.Size(38, 32);
@@ -118,9 +118,9 @@
             this.groupBox_manual.Controls.Add(this.dateTimePicker_manual);
             this.groupBox_manual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox_manual.Location = new System.Drawing.Point(39, 39);
-            this.groupBox_manual.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox_manual.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox_manual.Name = "groupBox_manual";
-            this.groupBox_manual.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox_manual.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox_manual.Size = new System.Drawing.Size(1133, 209);
             this.groupBox_manual.TabIndex = 6;
             this.groupBox_manual.TabStop = false;
@@ -130,7 +130,7 @@
             // 
             this.button_setTime_manually.Enabled = false;
             this.button_setTime_manually.Location = new System.Drawing.Point(953, 65);
-            this.button_setTime_manually.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button_setTime_manually.Margin = new System.Windows.Forms.Padding(6);
             this.button_setTime_manually.Name = "button_setTime_manually";
             this.button_setTime_manually.Size = new System.Drawing.Size(171, 81);
             this.button_setTime_manually.TabIndex = 10;
@@ -148,9 +148,9 @@
             this.groupBox1.Controls.Add(this.button_getTimeFromWeb);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(39, 284);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1133, 246);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
@@ -160,7 +160,7 @@
             // 
             this.button_saveNTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_saveNTP.Location = new System.Drawing.Point(545, 169);
-            this.button_saveNTP.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button_saveNTP.Margin = new System.Windows.Forms.Padding(6);
             this.button_saveNTP.Name = "button_saveNTP";
             this.button_saveNTP.Size = new System.Drawing.Size(107, 42);
             this.button_saveNTP.TabIndex = 11;
@@ -173,7 +173,7 @@
             // 
             this.textBox_ntpServerUrl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_ntpServerUrl.Location = new System.Drawing.Point(277, 171);
-            this.textBox_ntpServerUrl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_ntpServerUrl.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_ntpServerUrl.MaxLength = 70;
             this.textBox_ntpServerUrl.Name = "textBox_ntpServerUrl";
             this.textBox_ntpServerUrl.Size = new System.Drawing.Size(255, 33);
@@ -184,7 +184,7 @@
             // 
             this.button_setTime_automatically.Enabled = false;
             this.button_setTime_automatically.Location = new System.Drawing.Point(953, 65);
-            this.button_setTime_automatically.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button_setTime_automatically.Margin = new System.Windows.Forms.Padding(6);
             this.button_setTime_automatically.Name = "button_setTime_automatically";
             this.button_setTime_automatically.Size = new System.Drawing.Size(171, 81);
             this.button_setTime_automatically.TabIndex = 9;
@@ -196,7 +196,7 @@
             // 
             this.button_showNTPSetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_showNTPSetting.Location = new System.Drawing.Point(39, 169);
-            this.button_showNTPSetting.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button_showNTPSetting.Margin = new System.Windows.Forms.Padding(6);
             this.button_showNTPSetting.Name = "button_showNTPSetting";
             this.button_showNTPSetting.Size = new System.Drawing.Size(229, 42);
             this.button_showNTPSetting.TabIndex = 9;
@@ -217,7 +217,7 @@
             // button_getTimeFromWeb
             // 
             this.button_getTimeFromWeb.Location = new System.Drawing.Point(39, 65);
-            this.button_getTimeFromWeb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_getTimeFromWeb.Margin = new System.Windows.Forms.Padding(4);
             this.button_getTimeFromWeb.Name = "button_getTimeFromWeb";
             this.button_getTimeFromWeb.Size = new System.Drawing.Size(341, 81);
             this.button_getTimeFromWeb.TabIndex = 0;
@@ -246,7 +246,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox_manual);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(1265, 598);
             this.MinimumSize = new System.Drawing.Size(1265, 598);
             this.Name = "Form1";
