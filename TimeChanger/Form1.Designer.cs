@@ -51,6 +51,7 @@
             // 
             // dateTimePicker_manual
             // 
+            this.dateTimePicker_manual.CalendarFont = new System.Drawing.Font("Britannic Bold", 14.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker_manual.Location = new System.Drawing.Point(21, 42);
             this.dateTimePicker_manual.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker_manual.Name = "dateTimePicker_manual";
@@ -206,11 +207,11 @@
             // label_currentTime
             // 
             this.label_currentTime.AutoSize = true;
-            this.label_currentTime.Font = new System.Drawing.Font("Bell MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_currentTime.Font = new System.Drawing.Font("Britannic Bold", 14.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_currentTime.Location = new System.Drawing.Point(234, 48);
             this.label_currentTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_currentTime.Name = "label_currentTime";
-            this.label_currentTime.Size = new System.Drawing.Size(22, 22);
+            this.label_currentTime.Size = new System.Drawing.Size(25, 21);
             this.label_currentTime.TabIndex = 8;
             this.label_currentTime.Text = "...";
             // 
@@ -230,7 +231,7 @@
             this.label_footer.AutoSize = true;
             this.label_footer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_footer.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label_footer.Location = new System.Drawing.Point(211, 296);
+            this.label_footer.Location = new System.Drawing.Point(213, 293);
             this.label_footer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_footer.Name = "label_footer";
             this.label_footer.Size = new System.Drawing.Size(243, 16);
@@ -242,14 +243,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(681, 321);
+            this.ClientSize = new System.Drawing.Size(677, 309);
             this.Controls.Add(this.label_footer);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox_manual);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MaximumSize = new System.Drawing.Size(697, 360);
-            this.MinimumSize = new System.Drawing.Size(697, 360);
+            this.MaximumSize = new System.Drawing.Size(693, 348);
+            this.MinimumSize = new System.Drawing.Size(693, 348);
             this.Name = "Form1";
             this.Text = "TimeChanger 1.0";
             this.groupBox_manual.ResumeLayout(false);
