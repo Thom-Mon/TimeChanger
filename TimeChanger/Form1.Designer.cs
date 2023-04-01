@@ -46,6 +46,7 @@
             this.label_currentTime = new System.Windows.Forms.Label();
             this.button_getTimeFromWeb = new System.Windows.Forms.Button();
             this.label_footer = new System.Windows.Forms.Label();
+            this.label_timezone = new System.Windows.Forms.Label();
             this.groupBox_manual.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -256,18 +257,30 @@
             this.label_footer.TabIndex = 8;
             this.label_footer.Text = "It is time to change, it is a change of time";
             // 
+            // label_timezone
+            // 
+            this.label_timezone.AutoSize = true;
+            this.label_timezone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_timezone.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label_timezone.Location = new System.Drawing.Point(15, 541);
+            this.label_timezone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_timezone.Name = "label_timezone";
+            this.label_timezone.Size = new System.Drawing.Size(31, 29);
+            this.label_timezone.TabIndex = 9;
+            this.label_timezone.Text = "...";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(1219, 502);
+            this.ClientSize = new System.Drawing.Size(1248, 579);
+            this.Controls.Add(this.label_timezone);
             this.Controls.Add(this.label_footer);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox_manual);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(1243, 566);
             this.MinimumSize = new System.Drawing.Size(1243, 566);
             this.Name = "Form1";
             this.Text = "TimeChanger 1.0";
@@ -299,6 +312,7 @@
         private System.Windows.Forms.TextBox textBox_ntpServerUrl;
         private System.Windows.Forms.Button button_saveNTP;
         private System.Windows.Forms.CheckBox checkBox_summertime;
+        private System.Windows.Forms.Label label_timezone;
     }
 }
 

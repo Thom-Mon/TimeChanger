@@ -41,6 +41,7 @@ namespace TimeChanger
             InitializeComponent();
             textBox_ntpServerUrl.Text = Properties.Settings.Default.ntpServer;
             checkBox_summertime.Checked = Properties.Settings.Default.isSummertime;
+            label_timezone.Text = TimeZone.CurrentTimeZone.StandardName;
         }
 
         public static DateTime GetNetworkTime()
