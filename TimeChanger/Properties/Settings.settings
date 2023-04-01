@@ -5,5 +5,8 @@
     <Setting Name="ntpServer" Type="System.String" Scope="User">
       <Value Profile="(Default)">de.pool.ntp.org</Value>
     </Setting>
+    <Setting Name="isSummertime" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

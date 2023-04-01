@@ -40,6 +40,7 @@ namespace TimeChanger
         {
             InitializeComponent();
             textBox_ntpServerUrl.Text = Properties.Settings.Default.ntpServer;
+            checkBox_summertime.Checked = Properties.Settings.Default.isSummertime;
         }
 
         public static DateTime GetNetworkTime()
@@ -91,9 +92,9 @@ namespace TimeChanger
                 var milliseconds = (intPart * 1000) + ((fractPart * 1000) / 0x100000000L);
 
                 //**UTC** time
-                var networkDateTime = (new DateTime(1900, 1, 1, 0, 0, 0, DateTimeKind.Utc)).AddMilliseconds((long)milliseconds);
+                var networkDateTime = (new DateTime(1900, 1, 1, 0, 0, 0, DateTimeKind.Local)).AddMilliseconds((long)milliseconds);
 
-                return networkDateTime.ToLocalTime();
+                return networkDateTime;
             }
             catch 
             {
@@ -114,13 +115,12 @@ namespace TimeChanger
         private void button_setTime_manually_Click(object sender, EventArgs e)
         {
             DateTime dateTime = dateTimePicker_manual.Value;
-
-
+            
             SYSTEMTIME st = new SYSTEMTIME();
-            st.wYear = (Int16)dateTime.Year; // must be short
+            st.wYear = (Int16)dateTime.Year; 
             st.wMonth = (Int16)dateTime.Month;
             st.wDay = (Int16)dateTime.Day;
-            st.wHour = (Int16)(Int32.Parse(textBox_hour.Text)-1);
+            st.wHour = (Int16)(Int32.Parse(textBox_hour.Text) - 1); //could be that this is related to the timezone 
             st.wMinute = Int16.Parse(textBox_minute.Text);
             st.wSecond = 0;
 
@@ -130,10 +130,17 @@ namespace TimeChanger
         private void button_setTime_automatically_Click(object sender, EventArgs e)
         {
             SYSTEMTIME st = new SYSTEMTIME();
+
+            // if its wintertime decrease value by 1
+            int adjustHour = 0;
+            if (!checkBox_summertime.Checked)
+            {
+                adjustHour = 1;
+            }
             st.wYear = (Int16)systemTime.Year; 
             st.wMonth = (Int16)systemTime.Month;
             st.wDay = (Int16)systemTime.Day;
-            st.wHour = (Int16)(systemTime.Hour - 1);
+            st.wHour = (Int16)(systemTime.Hour - adjustHour);
             st.wMinute = (Int16)systemTime.Minute;
             st.wSecond = 0;
 
@@ -152,10 +159,18 @@ namespace TimeChanger
                 return;
             }
 
-            label_currentTime.Text = dateTime.ToString();
+            if (checkBox_summertime.Checked)
+            {
+                label_currentTime.Text = dateTime.AddHours(2).ToString();
+                systemTime = dateTime.AddHours(2);
+            }
+            else
+            {
+                label_currentTime.Text = dateTime.AddHours(1).ToString();
+                systemTime = dateTime.AddHours(1);
+            }
 
             button_setTime_automatically.Enabled = true;
-            systemTime = dateTime;
         }
 
         // HELPER - FUNCTIONS
@@ -214,6 +229,17 @@ namespace TimeChanger
         private void button_saveNTP_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.ntpServer = textBox_ntpServerUrl.Text;
+            Properties.Settings.Default.Save();
+        }
+
+        private void checkBox_summertime_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox_summertime.Checked)
+            {
+                
+            }
+
+            Properties.Settings.Default.isSummertime = true;
             Properties.Settings.Default.Save();
         }
     }
